@@ -7,10 +7,11 @@ function primafunz(string1,string2){
   string1=string1.split("")
   string2=string2.split("")
   string1.splice(2,string1.length-2)
-  slicedstring2=string2.slice(string2.length-3)
+  const slicedstring2=string2.slice(string2.length-3).join("")
+const resultString= (string1.join("")+" "+slicedstring2)
 
 
-return string1+" "+slicedstring2}
+return resultString.toUpperCase()}
 
 console.log (primafunz("Ciccio","Graziani"))
 
@@ -34,16 +35,27 @@ console.log(arrayRandom);
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
+  */
+
+
+  console.log("--------------------------------ESERCIZIO 4 (con for loop)-------------------------------------")
+
+let risultatoArray = 0
+function sommaArray(array1){
   
-*/
-const risultatoArray = 0
-function sommaArray (array1){
-  
-  for(i=0;i<array1;i++) {risultatoArray=risultatoArray+array1[i]
-    return risultatoArray
-  }
+  for(i=0;i<array1.length;i++) {
+    risultatoArray=risultatoArray+array1[i]; }
+    return risultatoArray;
 }
-console.log (sommaArray[23,34,56,46,76,1,5,37])
+
+console.log ("la somma dei numeri dell'array é:" , sommaArray([23,34,56,46,76,1,5,37]))
+
+console.log("--------------------------------ESERCIZIO 4 (con forEach())-------------------------------------")
+
+
+
+
+
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */

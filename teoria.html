@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Manipulation Playground</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="main-menu">
+          <li>Home</li>
+          <li>Chi Siamo</li>
+          <li>Contatti</li>
+          <li>About</li>
+        </ul>
+      </nav>
+      <h1 id="main-title">DOM MANIPULATION!</h1>
+    </header>
+    <main>
+      <button onclick="addNewListItem()">Aggiungi elementi alla lista</button>
+      <article class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel quasi quas! Cum, aliquam tempora! Non earum repellendus, vel consequatur
+@@ -38,7 +39,7 @@ <h1 id="main-title">DOM MANIPULATION!</h1>
+        </p>
+      </article>
+    </main>
+
+    <button onclick="makeFooterInvisible()">Fa diventare il footer invisible</button>
+    <footer id="footer">
+      <ul id="footer-menu">
+        <li>Home</li>
+        <li>Chi Siamo</li>
+        <li>Contatti</li>
+        <li>About</li>
+      </ul>
+    </footer>
+    <script src="./assets/js/dom-manipulation.js"></script>
+  </body>
+</html>
